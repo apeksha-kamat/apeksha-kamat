@@ -1,0 +1,43 @@
+database = [
+ {"name":"ShahRuk Khan",  "Indian":True,"last name khan":True, "worked in bollywood":True, "married more than once":False, "starred in chennai express":True, "more than 55":True }
+ {"name":"Salman Khan",   "Indian":True,"last name khan":True, "worked in bollywood":True, "married more than once":False, "starred in chennai express":False, "more than 55":True }
+ {"name":"Aamir Khan",    "Indian":True, "last name khan":True, "worked in bollywood":True, "married more than once":True, "starred in chennai express":False, "more than 55":True }
+ {"name":"Saif Ali Khan", "Indian":True, "last name khan":True, "worked in bollywood":True, "married more than once":True, "starred in chennai express":False, "more than 55":False}
+    ]
+def take_chance(answer , property):
+    if answer == "y":
+         ans = True
+    else:
+         ans = False
+        
+    to_remove=[]    
+    for d in database:
+         if d[property] != ans
+            to_remove.append(d)
+    for i in to_remove:
+        database.remove(i)
+    if len(database) == 1
+        print("your character is "+database[0]["name"])
+        quit()      
+ans = input("is your character indian(y,n)")
+take_chance(ans, "indian" )
+
+
+ans = input("is your character's last name khan(y,n)")
+take_chance(ans, "last name khan" )
+
+
+ans = input("has your character worked in bollywood(y,n)")
+take_chance(ans, "worked in bollywood" )
+
+
+ans = input("is your character married more than once(y,n)")
+take_chance(ans, "married more than once" )
+
+
+ans = input("has your character starred in chennai express(y,n)")
+take_chance(ans, "starred in chennai express" )
+
+
+ans = input("is your character more than 55(y,n)")
+take_chance(ans, "more than 55" )
